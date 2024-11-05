@@ -30,7 +30,7 @@ class MyHomePage extends StatelessWidget {
 
     final List<String> imageUrls = [
       'https://cdn.pixabay.com/photo/2021/05/09/06/07/dog-6240043_1280.jpg',
-      'https://www.pexels.com/photo/two-yellow-labrador-retriever-puppies-1108099/',
+      'https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014_1280.jpg',
       'https://cdn.pixabay.com/photo/2017/01/06/19/15/soap-bubble-1958650_1280.jpg',
     ];
 
@@ -43,12 +43,8 @@ class MyHomePage extends StatelessWidget {
         child: ListView(
           children: [
             // First Horizontal ListView with Asset Images
-            const Text(
-              'Horizontal List 1 - Asset Images',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
             SizedBox(
-              height: 280, // Adjusted height for images and text
+              height: 280,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: imagePaths.length,
@@ -72,36 +68,51 @@ class MyHomePage extends StatelessWidget {
             ),
 
             // List Tiles between horizontal lists
+
             const SizedBox(height: 16.0),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('ListTile 1'),
-              subtitle: Text('Description of ListTile 1'),
+            ListTile(
+              leading: const Icon(Icons.gas_meter),
+              title: const Text(
+                ' Default System Font',
+                style: TextStyle(),
+              ),
             ),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('ListTile 2'),
-              subtitle: Text('Description of ListTile 2'),
+            ListTile(
+              leading: const Icon(Icons.star),
+              title: Text(
+                'Roboto italic',
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontStyle: FontStyle.italic,
+                ),
+              ),
             ),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('ListTile 3'),
-              subtitle: Text('Description of ListTile 3'),
+            ListTile(
+              leading: const Icon(Icons.add_shopping_cart_rounded),
+              title: Text(
+                'Roboto 900',
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w900,
+                ),
+              ),
             ),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('ListTile 4'),
-              subtitle: Text('Description of ListTile 4'),
+            ListTile(
+              leading: const Icon(Icons.catching_pokemon),
+              title: Text(
+                'Roboto 300',
+                style: TextStyle(
+                  fontFamily: 'Roboto',
+                  fontWeight: FontWeight.w300,
+                ),
+              ),
             ),
 
             // Second Horizontal ListView with Network Images
             const SizedBox(height: 16.0),
-            const Text(
-              'Horizontal List 2 - Network Images',
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-            ),
+
             SizedBox(
-              height: 280, // Adjusted height for images and text
+              height: 280,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: imageUrls.length,
@@ -117,24 +128,6 @@ class MyHomePage extends StatelessWidget {
                   );
                 },
               ),
-            ),
-
-            // Additional Vertical ListTiles
-            const SizedBox(height: 16.0),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('Vertical Item 1'),
-              subtitle: Text('Description of Item 1'),
-            ),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('Vertical Item 2'),
-              subtitle: Text('Description of Item 2'),
-            ),
-            const ListTile(
-              leading: Icon(Icons.person),
-              title: Text('Vertical Item 3'),
-              subtitle: Text('Description of Item 3'),
             ),
           ],
         ),
