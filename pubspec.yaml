@@ -19,42 +19,26 @@ flutter:
   uses-material-design: true
 
   fonts:
-    - family: GothicA1
-      fonts:
-        - asset: assets/fonts/gothic/GothicA1-Black.ttf
-        - asset: assets/fonts/gothic/GothicA1-Bold.ttf
-        - asset: assets/fonts/gothic/GothicA1-ExtraBold.ttf
-        - asset: assets/fonts/gothic/GothicA1-Light.ttf
-        - asset: assets/fonts/gothic/GothicA1-Medium.ttf
-        - asset: assets/fonts/gothic/GothicA1-Regular.ttf
-        - asset: assets/fonts/gothic/GothicA1-Thin.ttf
-
-    - family: Montserrat
-      fonts:
-        - asset: assets/fonts/montserrat/Montserrat-VariableFont_wght.ttf
-        - asset: assets/fonts/montserrat/Montserrat-Italic-VariableFont_wght.ttf
-          style: italic
-
     - family: Roboto
       fonts:
-        - asset: assets/fonts/roboto/Roboto-Black.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Black.ttf
           weight: 900
-        - asset: assets/fonts/roboto/Roboto-BlackItalic.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-BlackItalic.ttf
           weight: 900
           style: italic
-        - asset: assets/fonts/roboto/Roboto-Bold.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Bold.ttf
           weight: 700
-        - asset: assets/fonts/roboto/Roboto-BoldItalic.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-BoldItalic.ttf
           weight: 700
           style: italic
-        - asset: assets/fonts/roboto/Roboto-Italic.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Italic.ttf
           style: italic
-        - asset: assets/fonts/roboto/Roboto-Light.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Light.ttf
           weight: 300
-        - asset: assets/fonts/roboto/Roboto-Medium.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Medium.ttf
           weight: 500
-        - asset: assets/fonts/roboto/Roboto-Regular.ttf
-        - asset: assets/fonts/roboto/Roboto-Thin.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Regular.ttf
+        - asset: assets/fonts/roboto.ttf/Roboto-Thin.ttf
           weight: 100
 
   assets:
